@@ -5,11 +5,13 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath=cosmincaloian/devops:1.0.0
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker tag devops:latest $dockerpath
+
 
 # Step 3:
-# Push image to a docker repository
+docker push $dockerpath

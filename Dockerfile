@@ -4,10 +4,11 @@ FROM python:3.7.3-stretch
 WORKDIR /app
 
 ## Step 2:
-COPY app.py /app
+COPY . /app
 
 ## Step 3:
-RUN pip install -r requirements.txt
+RUN pip install --upgrade pip &&\
+    pip install -r requirements.txt
 # hadolint ignore=DL3013
 
 ## Step 4:
