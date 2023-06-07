@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       # Use the same Docker base as the project
-      - image: devops_udacity
+      - image: python:3.7.3-stretch
         working_directory: /app
     steps:
       - checkout
