@@ -36,11 +36,27 @@ source .devops/bin/activate
 ```
 * Run `make install` to install the necessary dependencies
 
+### Running the tests
+
+* Setup the Environment first
+* Run `make test` to test the app and olso check the test coverage
+
+
+### Linting
+
+* Run `make lint` to check the app for linting errors. It will also lint the Dockerfile
+
+
 ### Running `app.py`
 
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
+
+### Upload the docker image to hub
+
+* Run `./run_docker.sh` to build the image
+* Run `./upload_docker.sh` to push the image to hub
 
 ### Kubernetes Steps
 
