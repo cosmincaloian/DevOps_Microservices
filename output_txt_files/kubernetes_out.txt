@@ -1,7 +1,9 @@
+[cloudshell-user@ip-10-2-22-38 ~]$ ./run_kubernetes.sh 
+pod/devops created
+pod/devops condition met
+NAME     READY   STATUS    RESTARTS   AGE
+devops   1/1     Running   0          4s
 Forwarding from 0.0.0.0:8000 -> 80
-
-
-
 Handling connection for 8000
 Handling connection for 8000
 Handling connection for 8000
