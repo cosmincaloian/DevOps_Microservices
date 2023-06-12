@@ -11,6 +11,7 @@ kubectl run devops --image=$dockerpath
 
 # Step 3:
 # List kubernetes pods
+kubectl wait pods devops --for condition=Ready --timeout=90s
 kubectl get pods
 
 # Step 4:
